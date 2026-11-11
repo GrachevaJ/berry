@@ -1,0 +1,25 @@
+.logo {
+  display: none;
+  line-height: 0;
+  color: $accent-1;
+
+  &--mobile {
+    display: inline-block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: rgb(15 128 93 / 50%);
+  }
+}

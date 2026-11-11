@@ -1,1 +1,9 @@
-/* здесь подключите шрифты */
+@include font-face(
+  "Comfortaa",
+  url("../../fonts/comfortaa.woff2")
+);
+@include font-face(
+  "Raleway",
+  url("../../fonts/raleway.woff2")
+);
+
