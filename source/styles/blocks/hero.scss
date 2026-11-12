@@ -35,22 +35,14 @@
 }
 
 .hero__title {
-  margin-bottom: 39px;
-  font-family: $heading-font;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  color: $accent-1;
+  @include heading(39px, 36px, 40px);
 
   & span {
     display: block;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
-    font-size: 48px;
-    line-height: 54px;
-    text-align: left;
+    @include heading(48px, 48px, 54px, left);
 
     & span {
       display: inline;
@@ -58,9 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
-    font-size: 51.7px;
-    line-height: 58px;
+    @include heading(55px, 51.7px, 58px);
   }
 }
 
@@ -111,17 +101,11 @@
 }
 
 .hero__button {
-  width: 264px;
-  padding: 16px 0;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 5%;
+  @include button(264px, 20px, 23px);
   box-shadow: 0 4px 4px rgb(88 13 101 / 25%);
 
   @media (min-width: $tablet-width) {
-    width: 336px;
-    font-size: 28px;
-    line-height: 33px;
+    @include button(336px, 28px, 33px);
   }
 
   @media (min-width: $desktop-width) {

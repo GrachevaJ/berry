@@ -1,0 +1,35 @@
+.card {
+  display: block;
+  width: 264px;
+  height: 432px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: $light-1;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px rgb(88 13 101 / 15%);
+
+}
+
+.card img {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.card__title {
+  @include heading(28px, 28px, 33px);
+  font-family: $text-font;
+}
+
+.card__description {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 38px;
+  font-family: $text-font;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__button {
+  @include button(220px, 20px, 23px);
+}

@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @media (min-width: $tablet-width) {
+    gap: 100px;
+  }
+}

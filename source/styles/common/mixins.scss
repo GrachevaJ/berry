@@ -25,3 +25,28 @@
     left: 0;
   }
 }
+
+@mixin heading ($margin-bottom, $font-size, $line-height, $text-align: center) {
+  margin-bottom: $margin-bottom;
+  font-family: $heading-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: $text-align;
+  color: $accent-1;
+}
+
+@mixin button ($width, $font-size, $line-height) {
+  display: block;
+  box-sizing: border-box;
+  width: $width;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-family: $text-font;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: 5%;
+  text-align: center;
+  color: $light-1;
+  background-color: $accent-2;
+  border-radius: 30px;
+}
