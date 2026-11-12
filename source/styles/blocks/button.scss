@@ -1,0 +1,10 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: $text-font;
+  text-align: center;
+  color: $light-1;
+  background-color: $accent-2;
+  border-radius: 30px;
+}

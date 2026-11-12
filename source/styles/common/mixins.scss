@@ -7,3 +7,21 @@
     src: $font-src;
   }
 }
+
+@mixin hero-icon($top-mobile, $top-tablet, $icon-name) {
+  position: absolute;
+  top: $top-mobile;
+  left: 20px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  content: "";
+  background-image: url("../../icons/icon-#{$icon-name}.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+
+  @media (min-width: $tablet-width) {
+    top: $top-tablet;
+    left: 0;
+  }
+}
