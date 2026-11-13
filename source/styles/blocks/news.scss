@@ -1,0 +1,104 @@
+.news {
+  font-family: $text-font;
+  background-image: url("../../icons/line-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center 7px;
+  background-size: 228px 32px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center top;
+    background-size: 296px 42px;
+  }
+}
+
+.news__title {
+  @include heading(65px, 36px, 40px);
+  padding-top: 100px;
+
+  @media (min-width: $tablet-width) {
+    @include heading(72px, 48px, 54px);
+
+    padding-top: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include heading(98px, 52px, 58px);
+
+    padding-top: 140px;
+  }
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  place-content: center center;
+
+  @media (min-width: $tablet-width) {
+    gap: 33px 20px;
+  }
+}
+
+.news__card {
+  position: relative;
+  box-sizing: border-box;
+  width: 268px;
+  min-height: 400px;
+  padding: 32px 18px 72px;
+  background-image: url("../../icons/branch.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom 23px;
+  background-size: 76px 32px;
+  border: 2px solid $active;
+  border-radius: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 348px;
+    min-height: 493px;
+    padding: 32px 34px 106px;
+    background-position: center bottom 40px;
+    background-size: 96px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    padding: 28px 36px 106px;
+  }
+}
+
+.news__card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 68px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 100px;
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.news__card-description {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+.news__card-date {
+  position: absolute;
+  right: 20px;
+  bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    right: 36px;
+    bottom: 104px;
+  }
+}
