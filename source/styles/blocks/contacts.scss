@@ -6,6 +6,11 @@
   background-position: center top;
   background-size: 228px 32px;
 
+  &--order-page {
+    margin-bottom: 64px;
+    background-position: center top 30px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 100px;
     background-size: 296px 42px;
@@ -36,6 +41,11 @@
 .contacts__title {
   @include heading(70px, 36px, 40px);
   padding-top: 105px;
+
+  &--order-page {
+    @include heading(64px, 36px, 40px);
+    padding-top: 120px;
+  }
 
   @media (min-width: $tablet-width) {
     @include heading(72px, 48px, 54px);

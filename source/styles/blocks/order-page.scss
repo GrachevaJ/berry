@@ -1,0 +1,39 @@
+.order-page {
+  padding: 184px 26px 0;
+  font-family: $text-font;
+  font-size: 16px;
+  line-height: 19px;
+  background-image: url("../../images/bg-order-page-mobile@1x.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: inset 0 4px 4px rgb(88 13 101 / 50%);
+}
+
+.order-page__title {
+  @include heading(32px, 36px, 40px);
+
+  & span {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include heading(48px, 48px, 54px);
+
+    & span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include heading(55px, 51.7px, 58px);
+  }
+}
+
+.order-page__description {
+  padding: 0 25px 125px;
+  text-align: center;
+  background-image: url("../../icons/line-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom 50px;
+  background-size: 228px 32px;
+}

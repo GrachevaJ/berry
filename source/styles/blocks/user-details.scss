@@ -1,0 +1,40 @@
+
+.user-details__list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-details__label {
+  display: block;
+  margin-bottom: 6px;
+  padding-left: 12px;
+
+  &--required {
+    color: #ff8282;
+  }
+}
+
+.user-details__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 12px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid $accent-1;
+  border-radius: 20px;
+
+  &--address {
+    min-height: 88px;
+  }
+
+  &--suggestions {
+    min-height: 124px;
+  }
+
+  &::placeholder {
+    color: rgb(142 152 146 / 70%);
+  }
+}

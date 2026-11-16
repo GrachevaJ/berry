@@ -57,10 +57,11 @@
   </header>
   <main class="main">
     <section class="order-page">
-      <h1 class="order-page__title">Закажи ягоды</h1>
+      <h1 class="order-page__title">Закажи <span></span>ягоды</span></h1>
       <p class="order-page__description">Мы соберем для вас ягоды
         и доставим их в удобном
-        для вас виде - свежими или замороженными </p>
+        для вас виде - свежими или замороженными
+      </p>
 
       <form class="form" action="echo.htmlacademy.ru" method="post">
 
@@ -68,7 +69,7 @@
 
           <legend class="form__title">Выберите ягоды</legend>
 
-          <ul class="form__list">
+          <ul class="form__list form__list--berries">
             <li class="form__item">
               <label class="control">
                 <input class="control__input" type="checkbox" name="lingonberry">
@@ -146,7 +147,7 @@
 
           <legend class="form__title">Вид хранения</legend>
 
-          <ul class="form__list">
+          <ul class="form__list form__list--condition">
 
             <li class="form__item">
               <label class="control">
@@ -175,21 +176,21 @@
         <fieldset class="form__choose-group">
           <legend class="form__title">Способ доставки</legend>
 
-          <ul class="form__list">
+          <ul class="form__list form__list--delivery">
 
             <li class="form__item">
               <label class="control">
                 <input class="control__input" type="radio" name="delivery-method" value="delivery" checked>
-                <span class="control__label">Доставка
+                <span class="control__label">Доставка<br>
                   (по СПБ в пределах
-                  КАД)</span>
+                  <span>КАД)</span></span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
                 <input class="control__input" type="radio" name="delivery-method" value="pickup">
-                <span class="control__label">Самовывоз
+                <span class="control__label">Самовывоз<br>
                   (Набережная Обводного канала, 101)</span>
               </label>
             </li>
@@ -199,52 +200,54 @@
 
         <fieldset class="form__choose-group">
           <legend class="form__title">Ваши контакты</legend>
+          <div class="user-details">
+            <ul class="user-details__list">
 
-          <ul class="form__list form__list--buyer-detail">
+              <li class="user-details__item">
+                <label class="user-details__control" for="buyer-name">
+                  <span class="user-details__label">Имя <span class="user-details__label--required">*</span></span>
+                </label>
+                <input class="user-details__input" type="text" name="buyer-name" id="buyer-name" minlength="2" placeholder="Как к вам обращаться?" required>
+              </li>
 
-            <li class="form__item">
-              <label class="control">
-                <span class="control__label">Имя <span class="control__label--required">*</span></span>
-                <input class="control__input" type="text" name="buyer-name" placeholder="Как к вам обращаться?" required>
-              </label>
-            </li>
+              <li class="user-details__item">
+                <label class="user-details__control" for="buyer-tel">
+                  <span class="user-details__label">Телефон <span class="user-details__label--required">*</span></span>
+                </label>
+                <input class="user-details__input" type="tel" name="buyer-tel" id="buyer-tel" pattern="\+7 \d{3} \d{3} \d{2} \d{2}" placeholder="+7 ххх ххх хх хх" required>
+              </li>
 
-            <li class="form__item">
-              <label class="control">
-                <span class="control__label">Телефон <span class="control__label--required">*</span></span>
-                <input class="control__input" type="tel" name="buyer-tel" placeholder="+7 ххх ххх хх хх" required>
-              </label>
-            </li>
+              <li class="user-details__item">
+                <label class="user-details__control" for="buyer-lemail">
+                  <span class="user-details__label">Email <span class="user-details__label--required">*</span></span>
+                </label>
+                <input class="user-details__input" type="email" name="buyer-email" id="buyer-email" placeholder="Ваш email" required>
 
-            <li class="form__item">
-              <label class="control">
-                <span class="control__label">Email <span class="control__label--required">*</span></span>
-                <input class="control__input" type="email" name="buyer-email" placeholder="Ваш email" required>
-              </label>
-            </li>
+              </li>
 
-            <li class="form__item">
-              <label class="control">
-                <span class="control__label">Адрес <span class="control__label--required">*</span></span>
-                <textarea class="control__input" type="text" name="buyer-address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
-              </label>
-            </li>
+              <li class="user-details__item">
+                <label class="user-details__control" for="buyer-address">
+                  <span class="user-details__label">Адрес <span class="user-details__label--required">*</span></span>
+                </label>
+                <textarea class="user-details__input user-details__input--address" name="buyer-address" id="buyer-address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+              </li>
 
-            <li class="form__item">
-              <label class="control">
-                <span class="control__label">Пожелания к заказу</span>
-                <textarea class="control__input" type="text" name="buyer-suggestions" placeholder="Чем мы можем вам помочь?"></textarea>
-              </label>
-            </li>
-          </ul>
+              <li class="user-details__item">
+                <label class="user-details__control" for="buyer-suggestions">
+                  <span class="user-details__label">Пожелания к заказу</span>
+                </label>
+                <textarea class="user-details__input user-details__input--suggestions" name="buyer-suggestions" id="buyer-suggestions" placeholder="Чем мы можем вам помочь?"></textarea>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <button class="form__button" type="submit">Заказать</button>
       </form>
     </section>
 
-    <section class="contacts" id="contacts">
+    <section class="contacts contacts--order-page" id="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Где забрать
+        <h2 class="contacts__title contacts__title--order-page">Где забрать
           ягоды?</h2>
         <p class="contacts__description">Забери ягоды с нашего склада
           по адресу: </p>

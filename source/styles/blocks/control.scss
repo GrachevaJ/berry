@@ -1,0 +1,77 @@
+.control {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.control__label {
+  cursor: pointer;
+
+  & span {
+    display: block;
+  }
+}
+
+.control__input[type="checkbox"] {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid $accent-1;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+
+  &:disabled {
+    border: 2px solid rgb(142 152 146 / 70%);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:checked::after {
+    width: 9px;
+    height: 5px;
+    margin-bottom: 2px;
+    content: "";
+    border-bottom: 3px solid $accent-1;
+    border-left: 3px solid $accent-1;
+    transform: rotate(-45deg);
+  }
+}
+
+
+.control__input[type="radio"] {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid $accent-1;
+  border-radius: 21px;
+  appearance: none;
+  cursor: pointer;
+
+  &:disabled {
+    border: 2px solid rgb(142 152 146 / 70%);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:checked::after {
+    width: 9px;
+    height: 9px;
+    content: "";
+    background-color: $accent-1;
+    border-radius: 50%;
+  }
+}

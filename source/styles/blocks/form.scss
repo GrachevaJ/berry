@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form__title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $accent-1;
+}
+
+.form__list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 31.5px;
+
+  &--berries {
+    height: 304px;
+  }
+
+  &--condition {
+    gap: 23px;
+  }
+}
+
+
+.form__list--delivery .form__item {
+  min-height: 57px;
+}
+
+.form__button {
+  @include button(264px, 20px, 23px);
+  box-shadow: 0 4px 4px rgb(88 13 101 / 25%);
+
+  @media (min-width: $tablet-width) {
+    @include button(336px, 28px, 33px);
+  }
+}
