@@ -32,23 +32,23 @@
     <nav class="nav nav--nojs">
       <button class="nav__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#">
+        <li class="nav__item nav__item--active">
+          <a href="#catalog">
             Каталог
           </a>
         </li>
         <li class="nav__item">
-          <a href="#">
+          <a href="#news">
             Новости
           </a>
         </li>
         <li class="nav__item">
-          <a href="#">
+          <a href="#contacts">
             Контакты
           </a>
         </li>
         <li class="nav__item">
-          <a href="#">
+          <a href="order-page.html">
             Заказать
           </a>
         </li>
@@ -65,11 +65,11 @@
           <li class="hero__advantages-item hero__advantages-item--moto">Доставка по Санкт-Петербургу</li>
         </ul>
       </div>
-      <a class="hero__button" href="#">Заказать</a>
+      <a class="hero__button" href="order-page.html">Заказать</a>
     </section>
 
     <section class="cards">
-      <h2 class="cards__title">Каталог</h2>
+      <h2 class="cards__title" id="catalog">Каталог</h2>
       <ul class="cards__list">
         <li class="cards__item">
           <div class="card">
@@ -82,7 +82,7 @@
               <span class="card__price">350 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -96,7 +96,7 @@
               <span class="card__price">550 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -110,7 +110,7 @@
               <span class="card__price">390 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -124,7 +124,7 @@
               <span class="card__price">450 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -138,7 +138,7 @@
               <span class="card__price">375 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -152,7 +152,7 @@
               <span class="card__price">300 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -166,7 +166,7 @@
               <span class="card__price">510 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
         <li class="cards__item">
@@ -180,13 +180,13 @@
               <span class="card__price">320 ₽</span>
               <span class="card__weight">за 1 кг</span>
             </p>
-            <a class="card__button" href="#">Заказать</a>
+            <a class="card__button" href="order-page.html">Заказать</a>
           </div>
         </li>
       </ul>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
       <h2 class="news__title">Что новенького?</h2>
       <ul class="news__list">
         <li class="news__item">
@@ -224,7 +224,7 @@
       </ul>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Где забрать
           ягоды?</h2>
@@ -251,40 +251,40 @@
 
   </main>
   <footer class="footer">
-    <div class="footer-item">
-      <a class="logo logo--mobile" href="#">
+    <div class="footer__item">
+      <a class="logo logo--mobile" href="index.html">
         <span class="visually-hidden">Логотип магазина 'Ягода'</span>
         <svg width="52" height="52">
           <use href="images/logo-mobile.svg"></use>
         </svg>
       </a>
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <span class="visually-hidden">Логотип магазина 'Ягода'</span>
         <svg width="134" height="60">
           <use href="images/logo.svg"></use>
         </svg>
       </a>
     </div>
-    <div class="footer-item">
-      <ul class="footer-item__social-list">
-        <li class="footer-item__social-item">
-          <a class="footer-item__social-link" href="https://t.me">
+    <div class="footer__item">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://t.me">
             <span class="visually-hidden">Мы в Telegram</span>
             <svg width="17" height="16">
               <use href="images/telegram.svg"></use>
             </svg>
           </a>
         </li>
-        <li class="footer-item__social-item">
-          <a class="footer-item__social-link" href="https://vk.ru">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://vk.ru">
             <span class="visually-hidden">Мы в Вконтакте</span>
             <svg width="18" height="10">
               <use href="images/vk.svg"></use>
             </svg>
           </a>
         </li>
-        <li class="footer-item__social-item">
-          <a class="footer-item__social-link" href="https://youtube.com">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="https://youtube.com">
             <span class="visually-hidden">Мы на YouTube</span>
             <svg width="16" height="13">
               <use href="images/youtube.svg"></use>
@@ -292,13 +292,11 @@
           </a>
         </li>
 
-        </a>
-        </li>
       </ul>
     </div>
-    <div class="footer-item footer-item__copyright">
-      <a class="footer-item__copyright-link" href="https://htmlacademy.ru/frontender-diy">
-        <span class="footer-item__copyright-text">HTML Academy</span>
+    <div class="footer__item footer__copyright">
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/frontender-diy">
+        <span class="footer__copyright-text">HTML Academy</span>
       </a>
     </div>
   </footer>

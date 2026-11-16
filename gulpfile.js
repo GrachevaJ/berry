@@ -185,6 +185,7 @@ export function startServer() {
     server: {
       baseDir: PATH_TO_DIST,
     },
+    browser: 'chrome',
     serveStatic,
     cors: true,
     notify: false,
