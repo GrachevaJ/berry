@@ -42,6 +42,12 @@
     border-left: 3px solid $accent-1;
     transform: rotate(-45deg);
   }
+
+  &:hover:not(:disabled),
+  &:checked:hover::after,
+  &:checked:focus::after {
+    border-color: #7bdb0a;
+  }
 }
 
 
@@ -73,5 +79,15 @@
     content: "";
     background-color: $accent-1;
     border-radius: 50%;
+  }
+
+  &:hover:not(:disabled),
+  &:checked:hover::after,
+  &:checked:focus::after {
+    border-color: #7bdb0a;
+  }
+
+  &:checked:hover::after {
+    background-color: #7bdb0a;
   }
 }

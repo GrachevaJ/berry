@@ -49,5 +49,14 @@
   color: $light-1;
   background-color: $accent-2;
   border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #b22ec8;
+  }
+
+  &:active {
+    background-color: rgb(106 16 122 / 60%);
+  }
 }
 
