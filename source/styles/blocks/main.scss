@@ -1,9 +1,15 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  &--index {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 
-  @media (min-width: $tablet-width) {
-    gap: 100px;
+    @media (min-width: $tablet-width) {
+      gap: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 100px;
+    }
   }
 }

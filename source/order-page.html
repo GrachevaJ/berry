@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <title>Berry</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="fonts/comfortaa.woff2" rel="preload" type="font/woff2" as="font">
-  <link href="fonts/raleway.woff2" rel="preload" type="font/woff2" as="font">
+  <link href="fonts/comfortaa.woff2" rel="preload" type="font/woff2" as="font" crossorigin>
+  <link href="fonts/raleway.woff2" rel="preload" type="font/woff2" as="font" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
@@ -63,7 +63,7 @@
         для вас виде - свежими или замороженными
       </p>
 
-      <form class="form" action="echo.htmlacademy.ru" method="post">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="form__choose-group">
 
@@ -72,70 +72,70 @@
           <ul class="form__list form__list--berries">
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="lingonberry">
+                <input class="control__input" type="checkbox" name="berries" value="lingonberry">
                 <span class="control__label">брусника</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="cherry">
+                <input class="control__input" type="checkbox" name="berries" value="cherry">
                 <span class="control__label">вишня</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="blueberry">
+                <input class="control__input" type="checkbox" name="berries" value="blueberry">
                 <span class="control__label">голубика</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="blackberry">
+                <input class="control__input" type="checkbox" name="berries" value="blackberry">
                 <span class="control__label">ежевика</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="strawberry">
+                <input class="control__input" type="checkbox" name="berries" value="strawberry">
                 <span class="control__label">клубника</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="cranberry">
+                <input class="control__input" type="checkbox" name="berries" value="cranberry">
                 <span class="control__label">клюква</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="gooseberry">
+                <input class="control__input" type="checkbox" name="berries" value="gooseberry">
                 <span class="control__label">крыжовник</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="raspberry">
+                <input class="control__input" type="checkbox" name="berries" value="raspberry">
                 <span class="control__label">малина</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="cloudberry" disabled>
+                <input class="control__input" type="checkbox" name="berries" value="cloudberry" disabled>
                 <span class="control__label">морошка</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="bilberry" disabled>
+                <input class="control__input" type="checkbox" name="berries" value="bilberry" disabled>
                 <span class="control__label">черника</span>
               </label>
             </li>
@@ -151,21 +151,21 @@
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="frost">
+                <input class="control__input" type="checkbox" name="condition" value="fresh">
                 <span class="control__label">свежие ягоды</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="fresh">
+                <input class="control__input" type="checkbox" name="condition" value="frost">
                 <span class="control__label">замороженные ягоды</span>
               </label>
             </li>
 
             <li class="form__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="mix">
+                <input class="control__input" type="checkbox" name="condition" value="mix">
                 <span class="control__label">ягодные миксы</span>
               </label>
             </li>
@@ -191,7 +191,7 @@
               <label class="control">
                 <input class="control__input" type="radio" name="delivery-method" value="pickup">
                 <span class="control__label">Самовывоз<br>
-                  (Набережная Обводного канала, 101)</span>
+                  (Набережная Обводного <span></span>канала, 101)</span></span>
               </label>
             </li>
           </ul>
@@ -199,7 +199,7 @@
         </fieldset>
 
         <fieldset class="form__choose-group">
-          <legend class="form__title">Ваши контакты</legend>
+          <legend class="form__title form__title--user-details">Ваши контакты</legend>
           <div class="user-details">
             <ul class="user-details__list">
 
@@ -210,14 +210,14 @@
                 <input class="user-details__input" type="text" name="buyer-name" id="buyer-name" minlength="2" placeholder="Как к вам обращаться?" required>
               </li>
 
-              <li class="user-details__item">
+              <li class="user-details__item user-details__item--phone">
                 <label class="user-details__control" for="buyer-tel">
                   <span class="user-details__label">Телефон <span class="user-details__label--required">*</span></span>
                 </label>
                 <input class="user-details__input" type="tel" name="buyer-tel" id="buyer-tel" pattern="\+7 \d{3} \d{3} \d{2} \d{2}" placeholder="+7 ххх ххх хх хх" required>
               </li>
 
-              <li class="user-details__item">
+              <li class="user-details__item user-details__item--email">
                 <label class="user-details__control" for="buyer-lemail">
                   <span class="user-details__label">Email <span class="user-details__label--required">*</span></span>
                 </label>
@@ -225,18 +225,18 @@
 
               </li>
 
-              <li class="user-details__item">
+              <li class="user-details__item user-details__item--address">
                 <label class="user-details__control" for="buyer-address">
                   <span class="user-details__label">Адрес <span class="user-details__label--required">*</span></span>
                 </label>
                 <textarea class="user-details__input user-details__input--address" name="buyer-address" id="buyer-address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
               </li>
 
-              <li class="user-details__item">
+              <li class="user-details__item user-details__item--suggestions">
                 <label class="user-details__control" for="buyer-suggestions">
                   <span class="user-details__label">Пожелания к заказу</span>
                 </label>
-                <textarea class="user-details__input user-details__input--suggestions" name="buyer-suggestions" id="buyer-suggestions" placeholder="Чем мы можем вам помочь?" disabled></textarea>
+                <textarea class="user-details__input user-details__input--suggestions" name="buyer-suggestions" id="buyer-suggestions" placeholder="Чем мы можем вам помочь?"></textarea>
               </li>
             </ul>
           </div>
@@ -246,7 +246,7 @@
     </section>
 
     <section class="contacts contacts--order-page" id="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--order-page">
         <h2 class="contacts__title contacts__title--order-page">Где забрать
           ягоды?</h2>
         <p class="contacts__description">Забери ягоды с нашего склада

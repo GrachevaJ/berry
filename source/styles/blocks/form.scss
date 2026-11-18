@@ -1,33 +1,117 @@
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 33px;
+  margin-bottom: 80px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+    margin-bottom: 90px;
+    padding: 0 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 298px;
+  }
 }
 
 .form__title {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   font-size: 20px;
   line-height: 23px;
   color: $accent-1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding: 0 70px;
+    font-size: 28px;
+    line-height: 33px;
+
+    &--user-details {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    padding: 0;
+
+    &--user-details {
+      text-align: left;
+    }
+  }
 }
 
 .form__list {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 31.5px;
+  display: grid;
+  gap: 32px;
 
   &--berries {
-    height: 304px;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
   }
 
   &--condition {
     gap: 23px;
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 24px;
+    padding: 0 70px;
+    font-size: 18px;
+    line-height: 22px;
+
+    &--berries {
+      grid-template-rows: repeat(4, auto);
+      column-gap: 50px;
+      margin-bottom: 10px;
+    }
+
+    &--condition {
+      grid-template-rows: repeat(2, auto);
+      grid-auto-flow: column;
+      column-gap: 15px;
+      margin-bottom: 8px;
+    }
+
+    &--delivery {
+      grid-template-columns: repeat(2, auto);
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 48px;
+    padding: 0;
+
+    &--berries {
+      grid-template-rows: repeat(2, auto);
+      margin-bottom: 18px;
+    }
+
+    &--condition {
+      grid-template-columns: repeat(3, max-content);
+      grid-template-rows: 1;
+
+      margin-bottom: 30px;
+    }
+
+    &--delivery {
+      grid-template-columns: repeat(2, max-content);
+      margin-bottom: 7px;
+    }
+  }
 }
 
+.form__item {
+  @media (min-width: $tablet-width) {
+    min-width: 134px;
+  }
 
-.form__list--delivery .form__item {
-  min-height: 57px;
+  @media (min-width: $desktop-width) {
+    min-width: auto;
+  }
 }
 
 .form__button {
@@ -38,3 +122,4 @@
     @include button(336px, 28px, 33px);
   }
 }
+

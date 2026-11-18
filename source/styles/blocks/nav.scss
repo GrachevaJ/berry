@@ -1,25 +1,27 @@
 /* stylelint-disable selector-nested-pattern */
 .nav {
-  &--nojs {
-    .nav__menu-toggle {
-      display: none;
+  @media (max-width: $only-mobile-width) {
+    &--nojs {
+      .nav__menu-toggle {
+        display: none;
+      }
+
+      .nav__list {
+        display: block;
+      }
     }
 
-    .nav__list {
-      display: block;
-    }
-  }
+    &--opened {
+      .nav__list {
+        display: block;
+      }
 
-  &--opened {
-    .nav__list {
-      display: block;
-    }
-
-    .nav__menu-toggle {
-      right: 29px;
-      width: 28px;
-      height: 28px;
-      background-image: url("../../icons/close-menu.svg");
+      .nav__menu-toggle {
+        right: 29px;
+        width: 28px;
+        height: 28px;
+        background-image: url("../../icons/close-menu.svg");
+      }
     }
   }
 }

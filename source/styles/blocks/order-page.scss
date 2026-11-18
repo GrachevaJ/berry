@@ -5,8 +5,16 @@
   line-height: 19px;
   background-image: url("../../images/bg-order-page-mobile@1x.webp");
   background-repeat: no-repeat;
-  background-size: contain;
-  box-shadow: inset 0 4px 4px rgb(88 13 101 / 50%);
+  background-size: 100%;
+  box-shadow: inset 0 6px 4px -4px rgb(88 13 101 / 50%);
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/bg-order-page-tablet@1x.webp");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/bg-order-page-desktop@1x.webp");
+  }
 }
 
 .order-page__title {
@@ -17,6 +25,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 118px;
+
     @include heading(48px, 48px, 54px);
 
     & span {
@@ -25,7 +35,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include heading(55px, 51.7px, 58px);
+    padding-top: 115px;
+
+    @include heading(48px, 52px, 58px);
   }
 }
 
@@ -36,4 +48,17 @@
   background-repeat: no-repeat;
   background-position: center bottom 50px;
   background-size: 228px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 118px 150px;
+    font-size: 18px;
+    line-height: 22px;
+    background-position: center 85px;
+    background-size: 296px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 419px 150px;
+    background-position: center 90px;
+  }
 }

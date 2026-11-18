@@ -9,6 +9,14 @@
 
   & span {
     display: block;
+    padding-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    & span {
+      display: inline;
+      padding-left: 0;
+    }
   }
 }
 
@@ -44,8 +52,7 @@
   }
 
   &:hover:not(:disabled),
-  &:checked:hover::after,
-  &:checked:focus::after {
+  &:checked:hover::after {
     border-color: #7bdb0a;
   }
 }
