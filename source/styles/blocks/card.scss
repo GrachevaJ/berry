@@ -15,7 +15,7 @@
 }
 
 .card__title {
-  @include heading(28px, 28px, 33px);
+  @include heading(26px, 28px, 33px);
   font-family: $text-font;
 }
 

@@ -39,6 +39,10 @@
     flex-flow: row wrap;
     gap: 33px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 23px;
+  }
 }
 
 .news__card {
@@ -90,6 +94,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+
+    & span {
+      display: block;
+    }
   }
 }
 

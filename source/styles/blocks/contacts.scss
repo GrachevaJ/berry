@@ -8,11 +8,12 @@
 
   &--order-page {
     margin-bottom: 64px;
-    background-position: center top 15px;
+    background-position: center top 10px;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 100px;
+    background-position: center top 10px;
     background-size: 296px 42px;
   }
 
@@ -22,11 +23,21 @@
     gap: 100px;
     margin: 0 auto;
     padding: 142px 158px 100px;
+    background-position: calc(50% - 40px) top;
 
     &--order-page {
       gap: 21px;
       justify-content: space-between;
       padding-top: 155px;
+      background-position: center top 10px;
+    }
+  }
+}
+
+@supports (-moz-appearance: none) {
+  @media (min-width: $desktop-width) {
+    .contacts--order-page {
+      background-position: center top 10px;
     }
   }
 }
@@ -53,8 +64,14 @@
   @include heading(70px, 36px, 40px);
   padding-top: 105px;
 
+  & span {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
   &--order-page {
-    margin-bottom: 64px;
+    margin-bottom: 63px;
+    padding-top: 103px;
   }
 
   @media (min-width: $tablet-width) {

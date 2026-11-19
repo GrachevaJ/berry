@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 32px;
   margin-bottom: 80px;
 
   @media (min-width: $tablet-width) {
@@ -22,6 +22,11 @@
   line-height: 23px;
   color: $accent-1;
 
+  &--user-details {
+    margin-bottom: 33px;
+    padding-top: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     padding: 0 70px;
@@ -39,6 +44,20 @@
 
     &--user-details {
       text-align: left;
+    }
+  }
+}
+
+@supports (-moz-appearance: none) {
+  .form__title {
+    &--user-details {
+      @media (min-width: $tablet-width) {
+        margin: 0 auto 40px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin: 0 0 48px;
+      }
     }
   }
 }
