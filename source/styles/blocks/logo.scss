@@ -15,11 +15,11 @@
     }
   }
 
-  &:hover {
+  &--clickable:hover {
     color: $hover;
   }
 
-  &:active {
+  &--clickable:active {
     color: rgb(15 128 93 / 50%);
   }
 }
