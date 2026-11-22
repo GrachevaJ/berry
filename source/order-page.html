@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html class="page" lang="ru">
 
 <head>
@@ -33,17 +34,17 @@
       <button class="nav__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="index.html#catalog">
+          <a href="index.html#catalog" class="nav__link">
             Каталог
           </a>
         </li>
         <li class="nav__item">
-          <a href="index.html#news">
+          <a href="index.html#news" class="nav__link">
             Новости
           </a>
         </li>
         <li class="nav__item">
-          <a href="#contacts">
+          <a href="#contacts" class="nav__link">
             Контакты
           </a>
         </li>
@@ -57,7 +58,7 @@
   </header>
   <main class="main">
     <section class="order-page">
-      <h1 class="order-page__title">Закажи <span></span>ягоды</span></h1>
+      <h1 class="order-page__title">Закажи <span>ягоды</span></h1>
       <p class="order-page__description">Мы соберем для вас ягоды
         и доставим их в удобном
         для вас виде - свежими или замороженными
@@ -191,7 +192,7 @@
               <label class="control">
                 <input class="control__input" type="radio" name="delivery-method" value="pickup">
                 <span class="control__label">Самовывоз<br>
-                  (Набережная Обводного <span></span>канала, 101)</span></span>
+                  (Набережная Обводного <span>канала, 101)</span></span>
               </label>
             </li>
           </ul>
@@ -218,7 +219,7 @@
               </li>
 
               <li class="user-details__item user-details__item--email">
-                <label class="user-details__control" for="buyer-lemail">
+                <label class="user-details__control" for="buyer-email">
                   <span class="user-details__label">Email <span class="user-details__label--required">*</span></span>
                 </label>
                 <input class="user-details__input" type="email" name="buyer-email" id="buyer-email" placeholder="Ваш email" required>
@@ -257,10 +258,10 @@
               Набережная Обводного канала, 101
             </li>
             <li class="contacts__item contacts__item--phone">
-              <a href="tel:+79105244118">+ 7 910 524 41 18</a>
+              <a href="tel:+79105244118" class="contacts__link">+ 7 910 524 41 18</a>
             </li>
             <li class="contacts__item contacts__item--email">
-              <a href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+              <a href="mailto:info@yagoda.ru" class="contacts__link">info@yagoda.ru</a>
             </li>
           </ul>
         </address>

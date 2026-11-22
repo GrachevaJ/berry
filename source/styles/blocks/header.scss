@@ -3,7 +3,6 @@
   flex-direction: column;
   box-sizing: border-box;
   min-height: 68px;
-  padding: 8px 27px;
   background-color: $light-2;
 
   @media (min-width: $tablet-width) {
@@ -14,5 +13,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 24px 192px 24px 156px;
+  }
+}
+
+.header__logo {
+  padding: 8px 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

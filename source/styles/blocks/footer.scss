@@ -51,6 +51,17 @@
 }
 
 
+.footer__copyright-link {
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+}
+
+
 .footer__social-link {
   display: flex;
   align-items: center;
@@ -58,8 +69,20 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  color: $accent-1;
   border: 1px solid $accent-1;
   border-radius: 50%;
+
+  &:hover {
+    color: $hover;
+    border-color: $hover;
+  }
+
+  &:active {
+    color: $active;
+    border-color: $active;
+    opacity: 50%;
+  }
 
   @media (min-width: $tablet-width) {
     svg {

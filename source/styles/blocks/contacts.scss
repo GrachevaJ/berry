@@ -175,3 +175,14 @@
   background-image: url("../../icons/email.svg");
 }
 
+.contacts__link {
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+}
+
